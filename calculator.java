@@ -1,11 +1,21 @@
+import java.util.Scanner;
+
 public class calculator {
 
-    int A = 20;
-    int B = 50;
+    public static void main(String[] args) {
 
-    System.out.println("Sum"+ "="+ A+B);
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter First Number:");
+        int a=scanner.nextInt();
+        System.out.println("Enter Second Number:");
+        int b=scanner.nextInt();
+
     
-    System.out.println("Substraction"+ "="+ A-B);
+        System.out.println("Sum"+ "="+ a+b);
+        
+        System.out.println("Substraction"+ "="+ (a-b));
+    
+        System.out.println("Multiplication"+ "="+ a*b);  
+    }
 
-    System.out.println("Multiplication"+ "="+ A*B);
 }
